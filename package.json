@@ -1,13 +1,15 @@
 {
   "name": "create-obsidian-plugin-pnpm",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Create an Obsidian plugin with pnpm, TypeScript, esbuild, and declarative settings examples.",
   "author": {
-    "name": "bubu"
+    "name": "bubumua",
+    "url": "https://github.com/bubumua"
   },
   "repository": {
-    "url": ""
+    "url": "https://github.com/bubumua/create-obsidian-plugin-pnpm"
   },
+  "homepage": "https://github.com/bubumua/create-obsidian-plugin-pnpm#readme",
   "type": "module",
   "bin": {
     "create-obsidian-plugin-pnpm": "bin/index.mjs"
