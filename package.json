@@ -1,0 +1,44 @@
+{
+  "name": "create-obsidian-plugin-pnpm",
+  "version": "0.1.0",
+  "description": "Create an Obsidian plugin with pnpm, TypeScript, esbuild, and declarative settings examples.",
+  "author": {
+    "name": "bubu"
+  },
+  "repository": {
+    "url": ""
+  },
+  "type": "module",
+  "bin": {
+    "create-obsidian-plugin-pnpm": "bin/index.mjs"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "template/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "packageManager": "pnpm@12.15.0",
+  "license": "0-BSD",
+  "keywords": [
+    "create",
+    "obsidian",
+    "obsidian-plugin",
+    "pnpm",
+    "typescript",
+    "template"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check bin/index.mjs && node --check lib/generate.mjs && node --test",
+    "prepublishOnly": "pnpm run check"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

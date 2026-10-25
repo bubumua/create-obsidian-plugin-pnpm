@@ -1,0 +1,3 @@
+tagVersionPrefix: ''
+allowBuilds:
+  esbuild: true
